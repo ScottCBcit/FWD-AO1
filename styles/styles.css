@@ -12,13 +12,15 @@ html {
 
 /* Global Styles */
 body {
-  
+
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   background: rgb(249,49,22);
-background: linear-gradient(0deg, rgba(249,49,22,1) 0%, rgba(254,199,80,1) 100%);
+
+  background: linear-gradient(0deg, rgba(249,49,22,1) 0%, rgba(254,199,80,1) 100%);
+
   min-height: 100vh;
 }
 
@@ -101,9 +103,15 @@ legend{
 }
 
 .account-info-inputs label{
-  font-size: 1.2rem;
-  color: rgba(21,60,109,255);
-  margin-bottom: -0.25rem;
+  border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
 }
 
 .account-info-inputs input{
@@ -268,7 +276,6 @@ legend{
 .submit{
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: rgba(21,60,109,255);
   display: flex;
   flex-direction: column;
 }
