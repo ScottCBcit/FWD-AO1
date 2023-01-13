@@ -104,14 +104,14 @@ legend{
 
 .account-info-inputs label{
   border: 0;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px; 
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; 
 }
 
 .account-info-inputs input{
@@ -135,9 +135,26 @@ legend{
 
 .checkbox-selections{
   display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.programming-languages-checkboxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.programming-languages-checkboxes div{
+  flex-basis: 30%;
+}
+.devops-checkboxes{
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 1rem;
+}
+.devops-checkboxes div{
+  flex-basis: 30%;
 }
 
 .dev-skills label{
