@@ -11,13 +11,12 @@ html {
 
 /* Global Styles */
 body {
-  
   font-family: 'Josefin Slab';
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  background: rgb(209,242,252);
-  background: linear-gradient(0deg, rgba(209,242,252,1) 0%, rgba(89,205,241,1) 100%);
+  background: rgb(249,49,22);
+  background: linear-gradient(0deg, rgba(249,49,22,1) 0%, rgba(254,199,80,1) 100%);
   min-height: 100vh;
 }
 
@@ -64,7 +63,7 @@ legend span{
   display: inline-block;
   color: #ffffff;
   margin: 0 10px 0 0; 
-  background: #5fce80;
+  background: #153d6d;
   border-radius: 50%;
   height: 35px;
   width: 35px;
@@ -100,9 +99,15 @@ legend{
 }
 
 .account-info-inputs label{
-  font-size: 1.2rem;
-  color: rgba(21,60,109,255);
-  margin-bottom: -0.25rem;
+  border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
 }
 
 .account-info-inputs input{
@@ -263,18 +268,17 @@ legend{
 .submit{
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: rgba(21,60,109,255);
   display: flex;
   flex-direction: column;
 }
 
 .submit input{
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid rgba(95,206,128,255);
   border-radius: 5px;
   outline: none;
-  background: rgba(95,206,128,255);
+  background: #153d6d;
   color: #ffffff;
 }
 
