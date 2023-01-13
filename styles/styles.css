@@ -9,15 +9,18 @@ html {
 }
 
 
+
 /* Global Styles */
 body {
-  
-  font-family: 'Josefin Slab';
+
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  background: rgb(209,242,252);
-  background: linear-gradient(0deg, rgba(209,242,252,1) 0%, rgba(89,205,241,1) 100%);
+  background: rgb(249,49,22);
+
+  background: linear-gradient(0deg, rgba(249,49,22,1) 0%, rgba(254,199,80,1) 100%);
+
   min-height: 100vh;
 }
 
@@ -64,7 +67,7 @@ legend span{
   display: inline-block;
   color: #ffffff;
   margin: 0 10px 0 0; 
-  background: #5fce80;
+  background: #153d6d;
   border-radius: 50%;
   height: 35px;
   width: 35px;
@@ -114,7 +117,7 @@ legend{
 .account-info-inputs input{
   font-size: 1.2rem;
   padding: 0.5rem;
-  border: 2px solid #e8eeef;
+  border: 3px solid #e8eeef;
   border-radius: 5px;
   outline: none;
   background: #e8eeef;
@@ -122,7 +125,8 @@ legend{
 }
 
 .account-info-inputs input:focus{
-  border: 2px solid rgba(95,206,128,255);
+  border: 3px solid #fec750;
+  background: #ffffff;
 }
 
 
@@ -222,14 +226,15 @@ legend{
   font-weight: 700;
   padding: 0.5rem;
   color: rgba(21,60,109,50%);
-  border: 2px solid #e8eeef;
+  border: 3px solid #e8eeef;
   border-radius: 5px;
   outline: none;
   background-color: #e8eeef;
 }
 
 .referral-selections select:focus{
-  border: 2px solid rgba(95,206,128,255);
+  border: 3px solid #fec750;
+  background: #ffffff;
 }
 
 .other-input{
@@ -241,14 +246,15 @@ legend{
 .other-input input{
   font-size: 1.2rem;
   padding: 0.5rem;
-  border: 2px solid #e8eeef;
+  border: 3px solid #e8eeef;
   border-radius: 5px;
   outline: none;  
   background: #e8eeef;
 }
 
 .other-input input:focus{
-  border: 2px solid rgba(95,206,128,255);
+  border: 3px solid #fec750;
+  background: #ffffff;
 }
 
 .comments{
@@ -272,7 +278,7 @@ legend{
 .comments textarea{
   font-size: 1.2rem;
   padding: 0.5rem;
-  border: 2px solid #e8eeef;
+  border: 3px solid #e8eeef;
   border-radius: 5px;
   outline: none;
   background: #e8eeef;
@@ -280,31 +286,31 @@ legend{
 }
 
 .comments textarea:focus{
-  border: 2px solid rgba(95,206,128,255);
+  border: 3px solid #fec750;
+  background: #ffffff;
 }
 
 .submit{
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: rgba(21,60,109,255);
   display: flex;
   flex-direction: column;
 }
 
 .submit input{
   font-size: 1.2rem;
-  padding: 0.5rem;
-  border: 1px solid rgba(95,206,128,255);
+  padding: 0.8rem;
+  border: none;
   border-radius: 5px;
   outline: none;
-  background: rgba(95,206,128,255);
+  background: #153d6d;
   color: #ffffff;
 }
 
-.submit input:hover{
+/* .submit input:hover{
   background: rgba(21,60,109,255);
   color: rgba(95,206,128,255);
-}
+} */
 
 .reset {
   margin-top: 1rem;
@@ -316,19 +322,19 @@ legend{
 
 .reset input {
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   outline: none;
-  background: rgba(255,255,255,255);
-  color: rgba(46,46,46,255);
+  background: #ffffff;
+  color: #f93116;
 }
 
-.reset input:hover {
+/* .reset input:hover {
   background: #E32636;
   color: rgba(255,255,255,255);
   border: 1px solid #E32636;
-}
+} */
 
 #please-select{
   font-size: 1.2rem;
