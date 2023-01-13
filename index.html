@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  
+</head>
+<body>
+  <!--  
+
+*** Form should have a max-width of
+480px and should be centred along
+the left / right axis within the
+browser
+
+Form should post data to #
+
+Select Menu Values
+
+Person
+  Friend
+  Family
+  Colleague
+
+Media
+  Internet
+  Radio
+  TV
+  Newspaper
+Other
+  Magic!
+  Other...
+-->
+
+  <div>
+    <section class="form-container">
+      <div class="form-title">
+        <h1>Signup</h1>
+      </div>
+      <form method="post" action="#">
+        <fieldset class="account-info">
+          <legend><span class="one">1</span>Account Info</legend>
+          <div class="account-info-inputs">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="dev-skills">
+          <legend><span class="two">2</span> Dev Skills</legend>
+          <div class="dev-skills-wrapper">
+          <label class="standalone">Programming Languages</label>
+          <div class="checkbox-selections">
+            <div>
+              <input type="checkbox" name="html" id="html" value="html">
+              <label for="html">HTML</label>
+            </div>
+            <div>
+              <input type="checkbox" name="css" id="css" value="css">
+              <label for="css">CSS</label>
+            </div>
+            <div>
+              <input type="checkbox" name="js" id="js" value="js">
+              <label for="js">JavaScript</label>
+            </div>
+            <div>
+              <input type="checkbox" name="php" id="php" value="php">
+              <label for="php">PHP</label>
+            </div>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset class="experience">
+          <legend><span class="three">3</span> Experience</legend>
+          <div  class="exp-wrapper">
+          <label class="standalone">Overall Experience</label>
+          <div class="radio-selections">
+            <div>
+              <input type="radio" name="experience" id="beginner" value="beginner">
+              <label for="beginner">Beginner</label>
+            </div>
+            <div>
+              <input type="radio" name="experience" id="intermediate" value="intermediate">
+              <label for="intermediate">Intermediate</label>
+            </div>
+            <div>
+              <input type="radio" name="experience" id="advanced" value="advanced">
+              <label for="advanced">Advanced</label>
+            </div>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset class="other">
+          <legend><span class="four">4</span> Other</legend>
+          <div class="referral-selections">
+            <label for="referral">How did you hear about us?</label>
+            <select name="referral" id="referral-select">
+              <option value="" id="please-select">Please Select...</option>
+              <optgroup label="Person" id="person-select">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+              </optgroup>
+              <optgroup label="Media" id="media-select">
+                <option value="internet">Internet</option>
+                <option value="radio">Radio</option>
+                <option value="tv">TV</option>
+                <option value="newspaper">Newspaper</option>
+              </optgroup>
+              <optgroup label="Other" id="other-select">
+                <option value="magic" id="magic">Magic!</option>
+                <option value="other" id="other">Other...</option>
+              </optgroup>
+            </select>
+            <div class="other-input">
+              <label for="other-text" style="display: none;" id="other-text-label">Details Please!</label>
+              <input type="text" name="other" id="other-text" style="display: none;" placeholder="Do tell..."/>
+            </div>
+          </div>
+          </fieldset>
+          <!-- <fieldset class="comments-field"> -->
+          <div class="comments">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          </div>
+        <!-- </fieldset> -->
+        <div class="submit">
+          <input type="submit" value="Submit">
+        </div>
+        <div class="reset">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
