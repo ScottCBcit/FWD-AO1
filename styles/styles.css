@@ -158,14 +158,20 @@ legend{
 }
 
 .dev-skills label{
-  font-size: 1.2rem;
-  color: rgba(21,60,109,255);
+  font-size: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.programming-languages-checkboxes{
+  font-weight: 400;
+}
+
+.devops-checkboxes{
+  font-weight: 400;
 }
 
 .checkbox-selections label{
   font-size: 1.2rem;
-  color: rgba(21,60,109,255);
   margin-bottom: 0.5rem;
 }
 
@@ -190,7 +196,8 @@ legend{
 
 .radio-selections label{
   font-size: 1.2rem;
-  color: rgba(21,60,109,255);
+  color: rgba(0, 0, 0);
+  font-weight: 400;
 }
 
 .radio-selections input{
@@ -217,7 +224,6 @@ legend{
 .referral-selections label{
   font-size: 1.2rem;
   color: rgba(21,60,109,255);
-  margin-bottom: 0.5rem;
 }
 
 .referral-selections select{
@@ -297,7 +303,7 @@ legend{
   flex-direction: column;
 }
 
-.submit input{
+.submit button{
   font-size: 1.2rem;
   padding: 0.8rem;
   border: none;
@@ -320,7 +326,7 @@ legend{
   flex-direction: column;
 }
 
-.reset input {
+.reset button {
   font-size: 1.2rem;
   padding: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0.5);

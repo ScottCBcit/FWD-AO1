@@ -49,11 +49,11 @@ Other
           <div class="account-info-inputs">
             <div>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required placeholder="Full Name..." />
+              <input type="text" id="name" name="name" required placeholder="Full name..." />
             </div>
             <div>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required  placeholder="Email..."/>
+              <input type="email" id="email" name="email" required  placeholder="Email Address..."/>
             </div>
             <div>
               <label for="password">Password:</label>
@@ -62,7 +62,7 @@ Other
           </div>
         </fieldset>
         <fieldset class="dev-skills">
-          <legend><span class="two">2</span> Dev Skills</legend>
+          <legend><span class="two">2</span>Dev Skills</legend>
           <div class="dev-skills-wrapper">
           <label class="standalone">Programming Languages</label>
           <div class="checkbox-selections">
@@ -115,7 +115,6 @@ Other
         <fieldset class="experience">
           <legend><span class="three">3</span> Experience</legend>
           <div  class="exp-wrapper">
-          <label class="standalone">Overall Experience</label>
           <div class="radio-selections">
             <div>
               <input type="radio" name="experience" id="beginner" value="beginner">
@@ -135,7 +134,7 @@ Other
         <fieldset class="other">
           <legend><span class="four">4</span> Other</legend>
           <div class="referral-selections">
-            <label for="referral">How did you hear about us?</label>
+            <label for="referral-select">How did you hear about us?</label>
             <select name="referral" id="referral-select">
               <option value="" id="please-select">Please Select...</option>
               <optgroup label="Person" id="person-select">
@@ -167,10 +166,12 @@ Other
           </div>
         <!-- </fieldset> -->
         <div class="submit">
-          <input type="submit" value="Submit">
+          <!-- <label for="submit-button" style="visibility: hidden;">Submit</label> -->
+          <button type="submit" value="Submit" id="submit-button">Submit</button> 
         </div>
         <div class="reset">
-          <input type="reset" value="Clear Form">
+          <!-- <label for="reset-button" style="visibility: hidden;">Reset</label> -->
+          <button type="reset" value="Clear Form" id="reset-button">Clear Form</button>
         </div>
       </form>
     </section>
